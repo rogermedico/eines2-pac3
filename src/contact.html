@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="Arya Music Festival website">
+  <meta name="author" content="Roger Medico Piqué">
+  <title>Arya Music Festival</title>
+  <link rel="stylesheet" href="./assets/styles/main.scss">
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+
+    <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarToggler"
+      aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-brand ml-auto mr-0">
+      <a class="nav__brand-link" href="./index.html">
+        <img class="nav__brand-img" src="./assets/images/logo.png" alt="logo">
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="nav__menu-list navbar-nav mr-auto mr-md-0 ml-md-auto">
+        <li class="nav__menu-item nav nav-item mx-3 my-2 my-md-0">
+          <a class="nav__menu-link nav-link" data-hover="Artists" href="./artists.html">Artists</a>
+        </li>
+        <li class="nav__menu-item nav nav-item mx-3 my-2  my-md-0">
+          <a class="nav__menu-link nav-link" data-hover="About us" href="./about.html">About us</a>
+        </li>
+        <li class="nav__menu-item nav nav-item mx-3 my-2  my-md-0">
+          <a class="nav__menu-link nav-link" data-hover="Contact" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <main class="contact mb-md-5">
+    <h1 class="contact__title">Contact</h1>
+    <div id="alert_container"></div>
+    <div class="contact__container container col-10 offset-1 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 px-4">
+      <form class="pb-3" name="contact-form" method="POST" data-netlify="true" action="/contact.html?s=1">
+        <div class="form-group">
+          <div class="form__field">
+            <label for="name">Name</label>
+            <input id="name" class="form-control" type="text" name="name" placeholder="John Smith" required>
+          </div>
+          <div class="form__field">
+            <label for="email">Email</label>
+            <input id="email" class="form-control" type="email" name="email" placeholder="john.smith@gmail.com"
+              required>
+          </div>
+          <div class="form__field">
+            <label for="message">Message</label>
+            <textarea id="message" class="form-control" rows="3" name="message" required></textarea>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <div class="form-check">
+            <input id="privacy" class="form-check-input" type="checkbox" required>
+            <label class="form-check-label" for="privacy">
+              I have reviewed and agree to Arya Music Festival's <div class="d-inline-block"><a class="link"
+                  href="#">Privacy Policy</a></div>
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="form__submit btn btn-secondary mx-auto mt-3 mb-2 d-block" onclick="">Send</button>
+      </form>
+
+    </div>
+  </main>
+  <footer class="mt-5 mb-5 d-md-flex">
+    <div class="footer__left mx-auto">
+      <p class="footer__title">
+        Arya Music Festival
+      </p>
+      <div class="footer__social">
+        <a class="footer__social--link" href="#"><i class="fab fa-facebook-square"></i></a>
+        <a class="footer__social--link" href="#"><i class="fab fa-twitter-square"></i></a>
+        <a class="footer__social--link" href="#"><i class="fab fa-instagram-square"></i></a>
+        <a class="footer__social--link" href="#"><i class="fab fa-youtube-square"></i></a>
+      </div>
+    </div>
+    <div class="footer__right mx-auto">
+      <div class="footer__links">
+        <a class="footer__links--link d-md-block d-lg-inline mr-3 mb-md-2" href="./index.html">Home</a>
+        <a class="footer__links--link d-md-block d-lg-inline mr-3 mb-md-2" href="./artists.html">Artists</a>
+        <a class="footer__links--link d-md-block d-lg-inline mr-3 mb-md-2" href="./about.html">About us</a>
+        <a class="footer__links--link d-md-block  d-lg-inline" href="./contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/scripts/main.js"></script>
+</body>
+
+</html>

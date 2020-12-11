@@ -1,0 +1,54 @@
+/**
+ * Contacta page rules
+ */
+
+.contact__title {
+  margin: 0;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: $text-color;
+  font-family: $font-family-special;
+  text-shadow: 2px -2px rgba($primary-color, .3);
+
+  @media (min-width: $sm) { font-size: 3.3rem; }
+
+  @media (min-width: $md) {
+    font-size: 3.5rem;
+    letter-spacing: .15rem;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 4.5rem;
+    letter-spacing: .3rem;
+  }
+
+  @media (min-width: $xl) {
+    font-size: 5rem;
+    letter-spacing: .5rem;
+  }
+}
+
+.contact__container {
+  background-color: rgba($background-color-light, .7);
+  border-radius: 15px;
+}
+
+.form__field { padding-top: 1rem; }
+
+.form__submit { font-size: 1.2rem; }
+
+.fade-in {
+  opacity: 1;
+  animation-name: fade-in-opacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: .25s;
+}
+
+@keyframes fade-in-opacity {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
