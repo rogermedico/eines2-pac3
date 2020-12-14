@@ -1,4 +1,11 @@
 /**
+ * Tailwind css
+ */
+
+@tailwind base;
+@tailwind components;
+
+/**
  * Import variables
  */
 
@@ -12,7 +19,6 @@
  * see commented examples below
  */
 
-@import '~bootstrap/scss/bootstrap';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import '~@fortawesome/fontawesome-free/scss/solid';
 @import '~@fortawesome/fontawesome-free/scss/brands';
@@ -36,6 +42,12 @@
 @import 'layouts/about';
 @import 'layouts/contact';
 @import 'layouts/footer';
+
+/**
+ * Tailwind css
+ */
+
+@tailwind utilities;
 
 /**
  * Do NOT include anything else in this file!
