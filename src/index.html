@@ -12,30 +12,30 @@
   <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
 </head>
 
-<body>
-  <!-- <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+<body class="bg-no-repeat bg-cover bg-black text-white font-sans">
+  <!-- <nav class="navbar navbar-expand-md navbar-light bg-transparent"> -->
+  <nav class="flex flex-row flex-no-wrap justify-between items-center py-2 px-4">
 
-    <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarToggler"
-      aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="flex-initial border border-white rounded py-1 px-4 h-10 md:hidden" type="button">
+      <i class="fas fa-bars text-gray-400 text-2xl"></i>
     </button>
 
-    <div class="navbar-brand ml-auto mr-0">
+    <div class="flex-initial py-1.5">
       <a class="nav__brand-link" href="./index.html">
-        <img class="nav__brand-img" src="./assets/images/logo.png" alt="logo">
+        <img class="h-16 w-auto" src="./assets/images/logo.png" alt="logo">
       </a>
     </div>
 
-    <div class="collapse navbar-collapse" id="navbarToggler">
-      <ul class="nav__menu-list navbar-nav mr-auto mr-md-0 ml-md-auto">
-        <li class="nav__menu-item nav nav-item mx-3 my-2 my-md-0">
-          <a class="nav__menu-link nav-link" data-hover="Artists" href="./artists.html">Artists</a>
+    <div class="hidden md:block">
+      <ul class="flex flex-row flex-no-wrap">
+        <li class="mx-3 my-0">
+          <a class="primary-link" data-hover="Artists" href="./artists.html">Artists</a>
         </li>
-        <li class="nav__menu-item nav nav-item mx-3 my-2  my-md-0">
-          <a class="nav__menu-link nav-link" data-hover="About us" href="./about.html">About us</a>
+        <li class="mx-3 my-0">
+          <a class="primary-link" data-hover="About us" href="./about.html">About us</a>
         </li>
-        <li class="nav__menu-item nav nav-item mx-3 my-2  my-md-0">
-          <a class="nav__menu-link nav-link" data-hover="Contact" href="./contact.html">Contact</a>
+        <li class="mx-3 my-0">
+          <a class="primary-link" data-hover="Contact" href="./contact.html">Contact</a>
         </li>
       </ul>
 
@@ -54,10 +54,11 @@
         allowfullscreen></iframe>
     </div>
 
-    <p class="home__date ml-0 mr-auto"><time datetime="2021-08-15"><a class="link" data-hover="15.08.21"
+    <p class="home__date ml-0 mr-auto"><time datetime="2021-08-15"><a class="primary-link" data-hover="15.08.21"
           href="#">15.08.21</a></time>
     </p>
-    <p class="home__place ml-auto mr-0"><a class="link" data-hover="Montbrió del Camp" href="#">Montbrió del Camp</a>
+    <p class="home__place ml-auto mr-0"><a class="primary-link" data-hover="Montbrió del Camp" href="#">Montbrió del
+        Camp</a>
     </p>
     <div class="home__tickets"><a id="home__tickets__link" href="#">Tickets</a></div>
   </main>
@@ -83,29 +84,6 @@
     </div>
   </footer>
   <script src="./assets/scripts/main.js"></script>
-</body> -->
-
-  <figure class="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
-    <img class="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="/sarah-dayan.jpg" alt=""
-      width="384" height="512">
-    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-      <blockquote>
-        <p class="text-lg font-semibold">
-          “Tailwind CSS is the only framework that I've seen scale
-          on large teams. It’s easy to customize, adapts to any design,
-          and the build size is tiny.”
-        </p>
-      </blockquote>
-      <figcaption class="font-medium">
-        <div class="text-cyan-600">
-          Sarah Dayan
-        </div>
-        <div class="text-gray-500">
-          Staff Engineer, Algolia
-        </div>
-      </figcaption>
-    </div>
-  </figure>
 </body>
 
 </html>

@@ -2,72 +2,32 @@
  * Navbar rules
  */
 
-.nav__brand-link {
-  text-decoration: none;
-
-  &:hover { text-decoration: none; }
-}
-
-.nav__brand-img {
-  height: 60px;
-  width: auto;
-}
-
-.nav__brand-title {
-  font-size: 1.7rem;
-  font-family: $font-family-sans-serif;
-}
-
-.nav__menu-item--active {
-  & a::before {
-    opacity: 1;
-    width: 100%;
+.primary-link {
+  @apply text-gray-400 py-1.5 px-0.5 tracking-wide no-underline relative;
+  
+    &::before,
+    &::after {
+      @apply absolute transition-all duration-500;
+    }
+  
+    &::before {
+      @apply bottom-0 block w-0 h-0.5 bg-primary; 
+      content: '';
+    }
+  
+    &::after {
+      @apply left-0 top-0 py-1.5 absolute whitespace-nowrap overflow-hidden max-w-0;
+    }
+  
+    &:hover {
+      @apply text-white no-underline;
+    }
+  
+    &:hover::before {
+      @apply opacity-100 w-full;
+    }
+  
+    &:hover::after {
+      @apply max-w-full;
+    }
   }
-
-  & a::after {
-    max-width: 100%;
-  }
-}
-
-.nav__menu-link {
-  font-family: $font-family-sans-serif;
-  font-size: 1.1rem;
-  padding: .1em;
-  position: relative;
-  letter-spacing: 1px;
-  text-decoration: none;
-
-  &::before,
-  &::after {
-    position: absolute;
-    -webkit-transition: all .35s ease;
-    transition: all .5s ease;
-  }
-
-  &::before {
-    bottom: 0;
-    display: block;
-    height: 3px;
-    width: 0%;
-    content: '';
-    background-color: $primary-color;
-  }
-
-  &::after {
-    left: 0;
-    top: 0;
-    padding: .1em 0;
-    position: absolute;
-    content: attr(data-hover);
-    white-space: nowrap;
-    max-width: 0%;
-    overflow: hidden;
-  }
-
-  &:hover::before {
-    opacity: 1;
-    width: 100%;
-  }
-
-  &:hover::after { max-width: 100%; }
-}
