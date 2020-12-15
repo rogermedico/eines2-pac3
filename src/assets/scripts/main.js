@@ -22,8 +22,8 @@ function iAmInHome(){
 function addLinkClassToEntrades(){
   const mainTickets = document.querySelector('#home__tickets__link');
   if(mainTickets) {
-    if(window.innerWidth<576) mainTickets.classList.add('link');
-    else mainTickets.classList.remove('link');
+    if(window.innerWidth<640) mainTickets.classList.add('primary-link','text-white');
+    else mainTickets.classList.remove('primary-link','text-white');
   }
 }
 

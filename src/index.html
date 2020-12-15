@@ -46,22 +46,28 @@
 
 
   <main class="grid gap-2.5 grid-cols-home grid-rows-home justify-center content-center md:mb-5">
-    <h1 class="home__title">Arya Music Festival</h1>
-    <div class="home__video">
-      <iframe class="home__video__item" width="560" height="315"
+    <h1 class="title col-span-full md:col-start-2 md:col-end-8">Arya Music Festival</h1>
+    <div
+      class="relative pb-video h-0 col-span-full row-start-2 row-end-5 sm:col-start-2 sm:col-end-8 lg:col-start-3 lg:col-end-7">
+      <iframe class="absolute top-0 left-0 w-full h-full border-0" width="560" height="315"
         src="https://www.youtube.com/embed/gzta0TfCkko?controls=0&autoplay=1&loop=1&&playlist=gzta0TfCkko"
         frameborder="0"
         allow="loop; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
     </div>
 
-    <p class="home__date ml-0 mr-auto"><time datetime="2021-08-15"><a class="primary-link" data-hover="15.08.21"
-          href="#">15.08.21</a></time>
+    <p
+      class="mr-auto mt-2 pl-2 text-base col-start-1 col-end-5 row-start-5 row-end-6 sm:col-start-2 sm:text-xl lg:col-start-3 lg:text-2xl">
+      <time datetime="2021-08-15"><a class="primary-link text-white" data-hover="15.08.21" href="#">15.08.21</a></time>
     </p>
-    <p class="home__place ml-auto mr-0"><a class="primary-link" data-hover="Montbrió del Camp" href="#">Montbrió del
+    <p
+      class="ml-auto mt-2 pr-2 text-base col-start-5 col-end-9 row-start-5 row-end-6 sm:col-end-8 sm:text-xl lg:col-end-7 lg:text-2xl">
+      <a class="primary-link text-white" data-hover="Montbrió del Camp" href="#">Montbrió del
         Camp</a>
     </p>
-    <div class="home__tickets"><a id="home__tickets__link" href="#">Tickets</a></div>
+    <div
+      class="mt-2 py-2 bg-secondary rounded-xl text-xl font-semibold tracking-wider grid justify-center content-center col-start-3 col-end-7 sm:pr-1 sm:text-2xl sm:block sm:m-0 sm:p-0 sm:text-center sm:rounded-tr-none sm:rounded-br-none sm:row-start-3 sm:row-end-4 sm:col-start-8 sm:col-end-9 sm:h-52 sm:tracking-widest hover:shadow-tickets tickets">
+      <a id="home__tickets__link" href="#">Tickets</a></div>
   </main>
 
   <footer class="my-5 md:flex md:flex-row md:flex-no-wrap">

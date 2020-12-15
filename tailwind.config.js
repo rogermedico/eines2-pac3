@@ -9,6 +9,9 @@ module.exports = {
       'serif': ['Roboto\\ Slab', 'georgia', 'times', 'serif'],
       'special': ['Gloria\\ Hallelujah', 'cursive']
     },
+    boxShadow: {
+      'tickets': '0 4px 8px 0 rgba(256, 198, 0, .1), 0 6px 20px 0 rgba(256, 198, 0, .1)'
+    },
     extend: {
       colors: {
         'primary': '#ffc600',
@@ -22,7 +25,11 @@ module.exports = {
       },
       gridTemplateRows: {
         'home': 'repeat(6, auto)'
-      }
+      },
+      spacing: {
+        'video': '56.25%'
+      },
+
     },
   },
   variants: {

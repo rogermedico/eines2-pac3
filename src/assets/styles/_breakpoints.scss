@@ -4,15 +4,11 @@
 
 @use 'sass:map';
 
-/* Define media queries breakpoints */
-// $xs: map.get($grid-breakpoints, 'xs');
-// $sm: map.get($grid-breakpoints, 'sm');
-// $md: map.get($grid-breakpoints, 'md');
-// $lg: map.get($grid-breakpoints, 'lg');
-// $xl: map.get($grid-breakpoints, 'xl');
+/* Define media queries breakpoints according to tailwind */
 
 $xs: 0;
-$sm: 576px;
+$sm: 640px;
 $md: 768px;
-$lg: 992px;
-$xl: 1200px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;
