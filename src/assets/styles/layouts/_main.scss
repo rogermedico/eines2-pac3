@@ -10,64 +10,48 @@
 }
 
 body {
-  // font-family: $font-family-sans-serif;
-  // background-color: $background-color;
-  // color: $text-color;
   background-image: url($background-image);
-  // background-size: contain;
-  // background-repeat: no-repeat; 
-
-  // @media (min-width: $md) { background-size: cover; }
 }
 
 .body {
   background-size: contain;
 }
 
-.link {
-  color: $text-color;
-  text-decoration: none;
-  padding: .1em;
-  position: relative;
-  letter-spacing: 1px;
-
+.primary-link {
+  @apply text-gray-400 py-1.5 px-0.5 tracking-wide no-underline relative;
+  
   &::before,
   &::after {
-    position: absolute;
-    -webkit-transition: all .35s ease;
-    transition: all .5s ease;
+    @apply absolute transition-all duration-500;
   }
 
   &::before {
-    bottom: 0;
-    display: block;
-    height: 3px;
-    width: 0%;
+    @apply bottom-0 block w-0 h-0.5 bg-primary; 
     content: '';
-    background-color: $primary-color;
   }
 
   &::after {
-    left: 0;
-    top: 0;
-    padding: .1em 0;
-    position: absolute;
-    white-space: nowrap;
-    max-width: 0%;
-    overflow: hidden;
+    @apply left-0 top-0 py-1.5 absolute whitespace-nowrap overflow-hidden max-w-0;
   }
 
   &:hover {
-    color: $text-color;
-    text-decoration: none;
+    @apply text-white no-underline;
   }
 
   &:hover::before {
-    opacity: 1;
-    width: 100%;
+    @apply opacity-100 w-full;
   }
 
   &:hover::after {
-    max-width: 100%;
+    @apply max-w-full;
+  }
+}
+
+.secondary-link {
+  @apply text-gray-400 no-underline;
+
+  &:hover {
+    @apply text-primary transition-all duration-300 ease-in-out;
+    text-shadow: 2px 2px 2px rgba($primary-color, .2), -2px -2px 2px rgba($primary-color, .2);
   }
 }

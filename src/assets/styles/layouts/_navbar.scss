@@ -1,33 +1,3 @@
 /**
  * Navbar rules
  */
-
-.primary-link {
-  @apply text-gray-400 py-1.5 px-0.5 tracking-wide no-underline relative;
-  
-    &::before,
-    &::after {
-      @apply absolute transition-all duration-500;
-    }
-  
-    &::before {
-      @apply bottom-0 block w-0 h-0.5 bg-primary; 
-      content: '';
-    }
-  
-    &::after {
-      @apply left-0 top-0 py-1.5 absolute whitespace-nowrap overflow-hidden max-w-0;
-    }
-  
-    &:hover {
-      @apply text-white no-underline;
-    }
-  
-    &:hover::before {
-      @apply opacity-100 w-full;
-    }
-  
-    &:hover::after {
-      @apply max-w-full;
-    }
-  }

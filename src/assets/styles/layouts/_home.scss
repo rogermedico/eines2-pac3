@@ -2,31 +2,32 @@
  * Home page rules
  */
 
-.home {
-  text-align: center;
-}
+// .home {
+//   text-align: center;
+// }
 
-@supports (display: grid) {
-  .home {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: minmax(50px, auto) repeat(6, 1fr) minmax(50px, auto);
-    grid-template-rows: repeat(6, auto);
-    justify-content: center;
-    align-content: center;
-    text-align: initial;
-  }
-}
+// @supports (display: grid) {
+//   .home {
+    // display: grid;
+    // grid-gap: 10px;
+    // grid-template-columns: minmax(50px, auto) repeat(6, 1fr) minmax(50px, auto);
+    // grid-template-rows: repeat(6, auto);
+    // justify-content: center;
+    // align-content: center;
+    // text-align: initial;
+//   }
+// }
 
 .home__title {
-  margin: 0;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  text-align: center;
-  font-weight: 700;
-  font-size: 2.3rem;
-  color: $text-color;
-  font-family: $font-family-special;
+  @apply mb-4 pb-2 text-center font-bold text-4xl text-white font-special;
+  // margin: 0;
+  // margin-bottom: 2rem;
+  // padding-bottom: 1rem;
+  // text-align: center;
+  // font-weight: 700;
+  // font-size: 2.3rem;
+  // color: $text-color;
+  // font-family: $font-family-special;
   text-shadow: 2px -2px rgba($primary-color, .3);
 
   @media (min-width: $sm) { font-size: 3.3rem; }
@@ -47,23 +48,23 @@
   }
 }
 
-@supports (display: grid) {
-  .home__title {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    grid-column: 1 / -1;
-    text-align: initial;
+// @supports (display: grid) {
+//   .home__title {
+//     display: grid;
+//     justify-content: center;
+//     align-content: center;
+//     grid-column: 1 / -1;
+//     text-align: initial;
 
-    @media (min-width: $sm) { grid-column: 1 / -1; }
+//     @media (min-width: $sm) { grid-column: 1 / -1; }
 
-    @media (min-width: $md) { grid-column: 2 / -2; }
+//     @media (min-width: $md) { grid-column: 2 / -2; }
 
-    @media (min-width: $lg) { grid-column: 2 / -2; }
+//     @media (min-width: $lg) { grid-column: 2 / -2; }
 
-    @media (min-width: $xl) { grid-column: 2/-2; }
-  }
-}
+//     @media (min-width: $xl) { grid-column: 2/-2; }
+//   }
+// }
 
 .home__video {
   position: relative;

@@ -1,8 +1,3 @@
 /**
  * Functions
  */
-
-/* Returns the given size plus 50px */
-@function size-plus-50px($n) {
-  @return $n + 50px;
-}

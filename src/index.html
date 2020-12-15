@@ -13,38 +13,39 @@
 </head>
 
 <body class="bg-no-repeat bg-cover bg-black text-white font-sans">
-  <!-- <nav class="navbar navbar-expand-md navbar-light bg-transparent"> -->
-  <nav class="flex flex-row flex-no-wrap justify-between items-center py-2 px-4">
+  <header>
+    <nav class="flex flex-row flex-no-wrap justify-between items-center py-2 px-4">
 
-    <button class="flex-initial border border-white rounded py-1 px-4 h-10 md:hidden" type="button">
-      <i class="fas fa-bars text-gray-400 text-2xl"></i>
-    </button>
+      <button class="flex-initial border border-white rounded py-1 px-4 h-10 md:hidden" type="button">
+        <i class="fas fa-bars text-gray-400 text-2xl"></i>
+      </button>
 
-    <div class="flex-initial py-1.5">
-      <a class="nav__brand-link" href="./index.html">
-        <img class="h-16 w-auto" src="./assets/images/logo.png" alt="logo">
-      </a>
-    </div>
+      <div class="flex-initial py-1.5">
+        <a href="./index.html">
+          <img class="h-16 w-auto" src="./assets/images/logo.png" alt="logo">
+        </a>
+      </div>
 
-    <div class="hidden md:block">
-      <ul class="flex flex-row flex-no-wrap">
-        <li class="mx-3 my-0">
-          <a class="primary-link" data-hover="Artists" href="./artists.html">Artists</a>
-        </li>
-        <li class="mx-3 my-0">
-          <a class="primary-link" data-hover="About us" href="./about.html">About us</a>
-        </li>
-        <li class="mx-3 my-0">
-          <a class="primary-link" data-hover="Contact" href="./contact.html">Contact</a>
-        </li>
-      </ul>
+      <div class="hidden md:block">
+        <ul class="flex flex-row flex-no-wrap">
+          <li class="mx-3 my-0">
+            <a class="primary-link" data-hover="Artists" href="./artists.html">Artists</a>
+          </li>
+          <li class="mx-3 my-0">
+            <a class="primary-link" data-hover="About us" href="./about.html">About us</a>
+          </li>
+          <li class="mx-3 my-0">
+            <a class="primary-link" data-hover="Contact" href="./contact.html">Contact</a>
+          </li>
+        </ul>
 
-    </div>
-  </nav>
+      </div>
+    </nav>
+  </header>
 
 
 
-  <main class="home mb-md-5">
+  <main class="grid gap-2.5 grid-cols-home grid-rows-home justify-center content-center md:mb-5">
     <h1 class="home__title">Arya Music Festival</h1>
     <div class="home__video">
       <iframe class="home__video__item" width="560" height="315"
@@ -62,24 +63,25 @@
     </p>
     <div class="home__tickets"><a id="home__tickets__link" href="#">Tickets</a></div>
   </main>
-  <footer class="mt-5 mb-5 d-md-flex">
-    <div class="footer__left mx-auto">
-      <p class="footer__title">
+
+  <footer class="my-5 md:flex md:flex-row md:flex-no-wrap">
+    <div class="mx-auto lg:grid lg:justify-items-center lg:items-center">
+      <p class="mb-4 text-center text-lg font-special md:mb-2">
         Arya Music Festival
       </p>
-      <div class="footer__social">
-        <a class="footer__social--link" href="#"><i class="fab fa-facebook-square"></i></a>
-        <a class="footer__social--link" href="#"><i class="fab fa-twitter-square"></i></a>
-        <a class="footer__social--link" href="#"><i class="fab fa-instagram-square"></i></a>
-        <a class="footer__social--link" href="#"><i class="fab fa-youtube-square"></i></a>
+      <div class="mb-8 text-center text-3xl md:text-4xl lg:mb-0">
+        <a class="secondary-link" href="#"><i class="fab fa-facebook-square"></i></a>
+        <a class="secondary-link" href="#"><i class="fab fa-twitter-square"></i></a>
+        <a class="secondary-link" href="#"><i class="fab fa-instagram-square"></i></a>
+        <a class="secondary-link" href="#"><i class="fab fa-youtube-square"></i></a>
       </div>
     </div>
-    <div class="footer__right mx-auto">
-      <div class="footer__links">
-        <a class="footer__links--link d-md-block d-lg-inline mr-3 mb-md-2" href="./index.html">Home</a>
-        <a class="footer__links--link d-md-block d-lg-inline mr-3 mb-md-2" href="./artists.html">Artists</a>
-        <a class="footer__links--link d-md-block d-lg-inline mr-3 mb-md-2" href="./about.html">About us</a>
-        <a class="footer__links--link d-md-block  d-lg-inline" href="./contact.html">Contact</a>
+    <div class="mx-auto font-sans lg:grid lg:justify-items-center lg:items-center">
+      <div class="text-center md:text-left">
+        <a class="secondary-link md:block lg:inline mr-3 md:mb-2" href="./index.html">Home</a>
+        <a class="secondary-link md:block lg:inline mr-3 md:mb-2" href="./artists.html">Artists</a>
+        <a class="secondary-link md:block lg:inline mr-3 md:mb-2" href="./about.html">About us</a>
+        <a class="secondary-link md:block lg:inline" href="./contact.html">Contact</a>
       </div>
     </div>
   </footer>

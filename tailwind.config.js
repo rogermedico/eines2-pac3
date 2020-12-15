@@ -16,7 +16,13 @@ module.exports = {
       },
       // backgroundImage: {
       //   'stage': "url('./src/assets/images/background.jpg')",
-      // }
+      // },
+      gridTemplateColumns: {
+        'home': 'minmax(50px, auto) repeat(6, 1fr) minmax(50px, auto)'
+      },
+      gridTemplateRows: {
+        'home': 'repeat(6, auto)'
+      }
     },
   },
   variants: {
