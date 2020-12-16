@@ -15,19 +15,19 @@ body {
 
 .title {
   @apply mb-8 pb-4 text-center font-bold text-4xl text-white font-special sm:text-5xl md:text-6xl md:tracking-widest lg:text-7xl grid justify-center content-center;
-  text-shadow: 2px -2px rgba($primary-color, .3);
+  text-shadow: 2px -2px rgba($primary-color, 0.3);
 }
 
 .primary-link {
   @apply text-gray-400 py-1.5 px-0.5 tracking-wide no-underline relative;
-  
+
   &::before,
   &::after {
     @apply absolute transition-all duration-500;
   }
 
   &::before {
-    @apply bottom-0 block w-0 h-0.5 bg-primary; 
+    @apply bottom-0 block w-0 h-0.5 bg-primary;
     content: '';
   }
 
@@ -53,6 +53,6 @@ body {
 
   &:hover {
     @apply text-primary transition-all duration-300 ease-in-out;
-    text-shadow: 2px 2px 2px rgba($primary-color, .2), -2px -2px 2px rgba($primary-color, .2);
+    text-shadow: 2px 2px 2px rgba($primary-color, 0.2), -2px -2px 2px rgba($primary-color, 0.2);
   }
 }

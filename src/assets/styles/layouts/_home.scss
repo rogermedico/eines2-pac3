@@ -3,8 +3,7 @@
  */
 
 .tickets {
-  
-  @media (min-width: $sm) { 
-    writing-mode: vertical-rl; 
+  @media (min-width: $sm) {
+    writing-mode: vertical-rl;
   }
 }

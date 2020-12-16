@@ -10,7 +10,7 @@ module.exports = {
     "no-eol-whitespace": true,
     "declaration-empty-line-before": "never",
     "value-keyword-case": "lower",
-    "number-leading-zero": "never",
+    "number-leading-zero": "always",
     "unit-allowed-list": ["rem","%","px","fr","em","s"],
     "font-family-name-quotes": "always-unless-keyword",
     "string-quotes": "single",
