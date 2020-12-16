@@ -7,7 +7,7 @@
   @import url('https://fonts.googleapis.com/css?family=#{$family}');
 }
 
-/* Include that two google fonts */
+/* Include google fonts */
 @include google-font('Raleway');
 @include google-font('Roboto+Slab');
 @include google-font('Gloria+Hallelujah');

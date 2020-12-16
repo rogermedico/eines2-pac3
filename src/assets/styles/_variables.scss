@@ -2,28 +2,11 @@
  * Variables file
  */
 
-@use 'sass:color';
-
 /* Tell fontawesome where his files are located */
 $fa-font-path: '../../../node_modules/@fortawesome/fontawesome-free/webfonts';
 
 /* Define colors */
 $primary-color: #ffc600;
-$secondary-color: #8c00ff;
-$text-color: #fff;
-$text-color-secondary: rgba($text-color, .5);
-$text-color-light: color.scale($text-color, $lightness: 30%);
-$text-color-dark: #272727;
-$nav-bar-color: rgba(255, 255, 255, .6);
-$nav-bar-active-color: #fff;
-$background-color: #000;
-$background-color-light: #101010;
-$background-color-white: #fff;
-
-/* Define fonts */
-$font-family-sans-serif: 'Raleway', arial, helvetica, sans-serif;
-$font-family-serif: 'Roboto Slab', georgia, times, serif;
-$font-family-special: 'Gloria Hallelujah', cursive;
 
 /* Define background img */
 $background-image: '../images/background.jpg';

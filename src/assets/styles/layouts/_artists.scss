@@ -2,78 +2,23 @@
  * Artists page rules
  */
 
-// .artists__title {
-//   margin: 0;
-//   margin-bottom: 2rem;
-//   padding-bottom: 1rem;
-//   text-align: center;
-//   font-weight: 700;
-//   font-size: 2.4rem;
-//   color: $text-color;
-//   font-family: $font-family-special;
-//   text-shadow: 2px -2px rgba($primary-color, .3);
-
-//   @media (min-width: $sm) { font-size: 3.3rem; }
-
-//   @media (min-width: $md) {
-//     font-size: 3.5rem;
-//     letter-spacing: .15rem;
-//   }
-
-//   @media (min-width: $lg) {
-//     font-size: 4.5rem;
-//     letter-spacing: .3rem;
-//   }
-
-//   @media (min-width: $xl) {
-//     font-size: 5rem;
-//     letter-spacing: .5rem;
-//   }
-// }
-
-.artists__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: rgba($background-color-light, .2);
-  border-radius: 15px;
-}
-
 .artist {
-  flex: 0 1 80%;
-  text-align: center;
+  @apply m-4 flex-artists-xs text-center md:flex-artists-md lg:flex-artists-lg;
 
-  @media (min-width: $sm) { flex: 0 1 80%; }
+  & .artist__figure {
+    @apply inline-block my-auto p-2 bg-background-color-light rounded-lg relative flex-col min-w-0 bg-clip-border hover:shadow-artists;
 
-  @media (min-width: $md) { flex: 0 1 40%; }
+    & .artist__image {
+      @apply block h-auto w-full max-w-250px flex-shrink-0;
+    }
 
-  @media (min-width: $lg) { flex: 0 1 25%; }
-}
+    & .artist__caption {
+      @apply inline-block mt-2 px-1 py-5 text-base lg:text-sm xl:text-base;
 
-.artist__figure {
-  display: inline-block;
-  margin-right: auto;
-  margin-left: auto;
-  padding: .5rem;
-  background-color: $background-color-light;
-  border-radius: 10px;
+      & .artist__link {
+        @apply primary-link text-white;
+      }
+    }
 
-  &:hover { box-shadow: 0 4px 8px 0 rgba($primary-color, .7), 0 6px 20px 0 rgba($primary-color, .7); }
-}
-
-.artist__image {
-  display: block;
-  height: auto;
-  width: 100%;
-  max-width: 250px;
-}
-
-.artist__caption {
-  display: inline-block;
-  margin-top: .5rem;
-  font-size: 1rem;
-
-  @media (min-width: $lg) { font-size: .8rem; }
-
-  @media (min-width: $xl) { font-size: 1rem; }
+  }
 }
